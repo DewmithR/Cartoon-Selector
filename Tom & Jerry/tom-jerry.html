@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Tom & Jerry Viewer</title>
+</head>
+
+<body>
+
+<h2>Select a Tom & Jerry cartoon Character</h2>
+
+<select id="characterSelect" onchange="changeImage()">
+<option value="Tom">Tom</option>
+<option value="Jerry">Jerry</option>
+<option value="Spike">Spike</option>
+<option value="Tyke">Tyke</option>
+<option value="Butch">Butch</option>
+</select>
+
+<br><br>
+
+<img id="characterImage" src="images2/Tom.jpg" width="200">
+
+<script>
+
+function changeImage() {
+let character = document.getElementById("characterSelect").value;
+document.getElementById("characterImage").src = "images/" + character + ".jpg";
+}
+
+</script>
+
+</body>
+</html>
