@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Character Viewer</title>
+</head>
+<body>
+
+<h2>Select a garfield cartoon Character</h2>
+
+<select id="characterSelect" onchange="changeImage()">
+    <option value="Garfield">Garfield</option>
+    <option value="Odie">Odie</option>
+    <option value="Nermal">Nermal</option>
+    <option value="Pooky">Pooky</option>
+    <option value="Jon">Jon</option>
+</select>
+
+<br><br>
+
+<img id="characterImage" src="images/Garfield.jpg" width="200">
+
+<script>
+function changeImage() {
+    let character = document.getElementById("characterSelect").value;
+    document.getElementById("characterImage").src = "images/" + character + ".jpg";
+}
+</script>
+
+</body>
+</html>
